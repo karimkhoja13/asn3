@@ -13,7 +13,7 @@ class GreyPig {
     }
 }
 var pigs = [];
-pigs.push(new GreyPig('Babe', 'Large White', 15, 30, 'Brave', 80));
+pigs.push(new GreyPig('pig', 'Large White', 15, 30, 'Brave', 80));
 console.log(pigs);
 const elem = document.getElementById('add-form');
 elem;

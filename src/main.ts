@@ -38,7 +38,7 @@ class GreyPig implements IPig {
 }
 
 var pigs: IPig[] = [];
-pigs.push(new GreyPig('Babe', 'Large White', 15, 30, 'Brave', 80));
+pigs.push(new GreyPig('pig', 'Large White', 15, 30, 'Brave', 80));
 
 console.log(pigs);
 
