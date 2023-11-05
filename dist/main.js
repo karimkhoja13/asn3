@@ -15,5 +15,6 @@ class GreyPig {
 var pigs = [];
 pigs.push(new GreyPig('Babe', 'Large White', 15, 30, 'Brave', 80));
 console.log(pigs);
-// const elem: any = document?.getElementById('add-form');
+const elem = document.getElementById('add-form');
+elem;
 // elem.innerHTML = pigs[0].displayInfo();
