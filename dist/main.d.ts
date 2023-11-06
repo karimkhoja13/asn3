@@ -17,5 +17,6 @@ declare class GreyPig implements IPig {
     displayInfo(): string;
 }
 declare var pigs: IPig[];
-declare const elem: any;
+declare let addButton: HTMLElement | null;
+declare let addForm: HTMLElement | null;
 //# sourceMappingURL=main.d.ts.map
