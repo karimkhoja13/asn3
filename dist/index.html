@@ -17,10 +17,18 @@
             <th>Actions</th>
           </tr>
         </thead>
-        <tbody>
-          <!-- This will be populated by TypeScript -->
+        <tbody id="all_pigs">
+          <!-- All Pigs will be populated here by TypeScript -->
         </tbody>
       </table>
+      <section id="pig_details" style="display: none">
+        <h3>More Info: </h3>
+        <table id="more-info">
+          <tbody>
+          <!-- More Info on the selected pig will be populated here by TypeScript -->
+          </tbody>
+        </table>
+      </section>
       <div id="add-form" class="form-group" style="display: none">
         <h2>Add a new pig</h2>
         <label for="category-select">Select a category:</label>
@@ -49,6 +57,6 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="main.js"></script>
+    <script src="test.js"></script>
   </body>
 </html>
