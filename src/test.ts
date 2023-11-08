@@ -81,58 +81,58 @@ interface IPig {
     }
   }
   
-//   class WhitePig extends Pig {
-//     runningAbility: number; // unique attribute for Grey pigs
+  class WhitePig extends Pig {
+    runningAbility: number; // unique attribute for Grey pigs
 
-//     constructor(
-//       name: string,
-//       breed: string,
-//       height: number,
-//       weight: number,
-//       personality: string,
-//       category: string,
-//       runningAbility: number
-//     ) {
-//       super(name, breed, height, weight, personality, category); // call the super class constructor
-//       this.runningAbility = runningAbility;
-//     }
+    constructor(
+      name: string,
+      breed: string,
+      height: number,
+      weight: number,
+      personality: string,
+      category: string,
+      runningAbility: number
+    ) {
+      super(name, breed, height, weight, personality, category); // call the super class constructor
+      this.runningAbility = runningAbility;
+    }
 
-//     public displayInfo(): string {
-//       return super.displayInfo() + `testing whitepig super: `;
-//     }
-//   }
+    public displayInfo(): string {
+      return super.displayInfo() + `testing whitepig super: `;
+    }
+  }
   
-//   class BlackPig extends Pig {
-//     strengthAbility: number; // unique attribute for Grey pigs
+  class BlackPig extends Pig {
+    strengthAbility: number; // unique attribute for Grey pigs
   
-//     constructor(
-//       name: string,
-//       breed: string,
-//       height: number,
-//       weight: number,
-//       personality: string,
-//       category: string,
-//       strengthAbility: number
-//     ) {
-//       super(name, breed, height, weight, personality, category); // call the super class constructor
-//       this.strengthAbility = strengthAbility;
-//     }
+    constructor(
+      name: string,
+      breed: string,
+      height: number,
+      weight: number,
+      personality: string,
+      category: string,
+      strengthAbility: number
+    ) {
+      super(name, breed, height, weight, personality, category); // call the super class constructor
+      this.strengthAbility = strengthAbility;
+    }
   
-//     public displayInfo(): string {
-//       return super.displayInfo() +
-//         `blackpig super: `;
-//     }
-//   }
+    public displayInfo(): string {
+      return super.displayInfo() +
+        `blackpig super: `;
+    }
+  }
 
 
 function displayPig(pig: IPig): string {
     return `<Name: ${pig.name}`;
-    +
-    `Name: ${pig.name}` +
-    `Name: ${pig.name}` +
-    `Name: ${pig.name}` +
-    `Name: ${pig.name}` +
-    `Name: ${pig.name}`;
+    // +
+    // `Name: ${pig.name}` +
+    // `Name: ${pig.name}` +
+    // `Name: ${pig.name}` +
+    // `Name: ${pig.name}` +
+    // `Name: ${pig.name}`;
 }
   
   // Get the references to the HTML elements
@@ -165,10 +165,6 @@ function displayPig(pig: IPig): string {
   let pigs: IPig[] = JSON.parse(localStorage.getItem('pigs') || '[]');
 
   pigs.sort((a, b) => a.category.localeCompare(b.category));
-
-  console.log(pigs[0]);
-  
-  //console.log(pigs[0]);
 
   // Populate the table with the pigs
   function populateTable() {
