@@ -38,7 +38,6 @@ declare class BlackPig extends Pig {
     constructor(name: string, breed: string, height: number, weight: number, personality: string, category: string, strengthAbility: number);
     getUnique(): any;
 }
-declare function displayPig(pig: IPig): string;
 declare let addButton: HTMLButtonElement;
 declare let pigTable: HTMLTableElement;
 declare let moreInfoTable: HTMLTableElement;
@@ -55,6 +54,4 @@ declare let submitButton: HTMLButtonElement;
 declare let cancelButton: HTMLButtonElement;
 declare let errorMsg: HTMLElement | null;
 declare let pigs: any[];
-declare function populateTable(): void;
-declare function populateUniqueAttribute(): void;
 //# sourceMappingURL=main.d.ts.map

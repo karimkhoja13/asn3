@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "serve dist",
-    "build": "tsc src/main.ts",
+    "build": "tsc",
     "dev": "tsc --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

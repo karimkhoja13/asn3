@@ -23,7 +23,7 @@
       </table>
       <section id="pig_details" style="display: none">
         <h3>More Info: </h3>
-        <table id="more-info">
+        <table id="more-info" class="table">
           <tbody>
           <!-- More Info on the selected pig will be populated here by TypeScript -->
           </tbody>
@@ -39,24 +39,25 @@
           <option value="Black">Black</option>
         </select>
         <label for="name-input">Enter a name:</label>
-        <input id="name-input" type="text" class="form-control" />
+        <input id="name-input" type="text" class="form-control" required />
         <label for="breed-input">Enter a breed:</label>
-        <input id="breed-input" type="text" class="form-control" />
+        <input id="breed-input" type="text" class="form-control" required />
         <label for="height-input">Enter a height:</label>
-        <input id="height-input" type="number" class="form-control" />
+        <input id="height-input" type="number" class="form-control" required min="0" max="100"/>
         <label for="weight-input">Enter a weight:</label>
-        <input id="weight-input" type="number" class="form-control" />
+        <input id="weight-input" type="number" class="form-control" required />
         <label for="personality-input">Enter a personality:</label>
-        <input id="personality-input" type="text" class="form-control" />
+        <input id="personality-input" type="text" class="form-control" required />
         <div id="unique-attribute" class="form-group">
           <!-- This will be populated by TypeScript -->
         </div>
+        <p id="error-message" style="color:red"></p>
         <button id="submit-button" class="btn btn-success">Submit</button>
         <button id="cancel-button" class="btn btn-danger">Cancel</button>
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="test.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
